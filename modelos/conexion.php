@@ -23,7 +23,7 @@ abstract class Conexion{
 
     }
 
-    // METODO PARA EJECUTAR SENTENCIAS SQL
+
 
     public function ejecutar($sql){
         $conexion = self::connectar();
@@ -39,7 +39,7 @@ abstract class Conexion{
         
     }
 
-    // METODO PARA CONSULTAR INFORMACION
+ 
     public function servir($sql){
         $conexion = self::connectar();
         $sentencia = $conexion->prepare($sql);

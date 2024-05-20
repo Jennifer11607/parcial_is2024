@@ -2,7 +2,7 @@
 
 <h1 class="text-center mt-5">FORMULARIO DE TIEMPOS DE COMIDA</h1>
 <div class="row justify-content-center">
-    <form action="../../../parcial_is2024/controladores/comida/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="/controladores/comida/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="com_nombre">NOMBRE QUIEN RECIBIO LA COMIDA</label>
