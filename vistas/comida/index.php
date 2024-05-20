@@ -23,16 +23,10 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-            <select type="number" name="cli_telefono" id="cli_telefono" class="form-control" required>
-                <option selected>SELECCIONA UNA OPCION</option>
-                <option value="1">Desayuno</option>
-                <option value="2">Almuerzo</option>
-                <option value="3">Cena</option>
-                <option value="4">Refaccion</option>
-            </select>
+                <label for="cli_nit">TIEMPO DE COMIDA</label>
+                <input type="text" name="cli_nit" id="cli_nit" class="form-control" required>
             </div>
         </div>
-
         <div class="row mb-3">
             <div class="col">
                 <label for="cli_nit">NOMBRE QUIEN SIRVIO</label>
