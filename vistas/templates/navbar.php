@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-success">
+<nav class="navbar fixed-top navbar-expand-lg bg-warning">
   <div class="container-fluid">
     <a class="navbar-brand" href="../comida/index.php"><i class="bi bi-hand-thumbs-up-fill"></i>OFICINA LOGISTICA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
