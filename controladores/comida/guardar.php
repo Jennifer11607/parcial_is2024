@@ -1,10 +1,10 @@
 <?php
 
-require '../../modelos/Comida.php';
+require '../parcial_is2024/modelos/comida.php';
 
-$fecha = $_POST['cli_fecha'];
-$tiempo = $_POST['cli_tiempo'];
-$sirvio = $_POST['cli_sirvio'];
+$fecha = $_POST['com_fecha'];
+$tiempo = $_POST['com_tiempo'];
+$sirvio = $_POST['com_sirvio'];
 
 // VALIDAR INFORMACION
 $_POST['com_nombre'] = htmlspecialchars($_POST['com_nombre']);
@@ -13,7 +13,7 @@ $_POST['com_fecha'] = filter_var($fecha, FILTER_VALIDATE_INT);
 $_POST['com_tiempo'] = filter_var($tiempo, FILTER_VALIDATE_INT);
 $_POST['com_sirvio'] = filter_var($sirvio, FILTER_VALIDATE_INT);
 
-if ($_POST['com_nombre'] == '' || $_POST['com_menu'] == '' || $_POST['com_fecha'] == '' || $_POST['com_tiempo'] < 0 || $_POST['cli_sirvio'] < 0) {
+if ($_POST['com_nombre'] == '' || $_POST['com_menu'] == '' || $_POST['com_fecha'] == '' || $_POST['com_tiempo'] < 0 || $_POST['com_sirvio'] < 0) {
 
     $resultado = [
         'mensaje' => 'DEBE VALIDAR LOS DATOS',

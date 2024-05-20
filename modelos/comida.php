@@ -1,7 +1,7 @@
 <?php
 require 'Conexion.php';
 
-class Comida extends Conexion{
+class comida extends Conexion{
     public $com_id;
     public $com_nombre;
     public $com_menu;
