@@ -1,5 +1,9 @@
 <?php
 
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
+
 
 
 abstract class Conexion{
@@ -23,7 +27,7 @@ abstract class Conexion{
 
     }
 
-
+    // METODO PARA EJECUTAR SENTENCIAS SQL
 
     public function ejecutar($sql){
         $conexion = self::connectar();
@@ -39,7 +43,7 @@ abstract class Conexion{
         
     }
 
- 
+    // METODO PARA CONSULTAR INFORMACION
     public function servir($sql){
         $conexion = self::connectar();
         $sentencia = $conexion->prepare($sql);
@@ -50,6 +54,7 @@ abstract class Conexion{
             $datos[] = array_change_key_case($v, CASE_LOWER);
         }
         self::$conexion = null;
+
         return $datos;
 }
 }
